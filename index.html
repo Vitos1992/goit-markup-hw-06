@@ -412,7 +412,8 @@
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" data-modal-close class="icon-modal">
-                <svg class="svg-modal" width="8" height="8" viewBox="0 0 8 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="svg-modal" width="8" height="8" viewBox="0 0 8 8" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
                     <g clip-path="url(#clip0_480361_273)">
                         <path
                             d="M8 0.805714L7.19429 0L4 3.19429L0.805714 0L0 0.805714L3.19429 4L0 7.19429L0.805714 8L4 4.80571L7.19429 8L8 7.19429L4.80571 4L8 0.805714Z"
@@ -425,11 +426,11 @@
                     </defs>
                 </svg>
             </button>
-<!--------------------------- Form----------------------------------- -->
+            <!--------------------------- Form----------------------------------- -->
             <form action="" class="form-modal">
                 <h2 class="input-form">Leave your contacts and we will call you back</h2>
 
-                <label for="user_name" class="name-form-input" >Name</label>
+                <label for="user_name" class="name-form-input">Name</label>
                 <input type="name" name="name" id="user_name" class="input-modal" />
 
                 <label for="user_tel" class="name-input">Phone</label>
@@ -439,14 +440,17 @@
                 <input type="email" name="email" id="user_email" class="input-modal" />
 
                 <label for="user_comment" class="name-input">Comment</label>
-                <input type="comment" name="comment" id="user_comment" class="input-modal-comment" />
+                <textarea name="comment" id="user_comment" class="input-modal-comment"
+                    placeholder="Text input">
+                </textarea>
 
-                <label for=" " class="form-title">
-                    <input type="checkbox" name="" class=""/>
-                    I accept the terms and conditions of the 
-                    <a href="" class="span-item" >Privacy Policy</a>
-                   
+               <div class="check-item">
+                <input type="checkbox" id="check" name="check" class="checkbox" />
+                <label for="check" class="form-title">
+                    I accept the terms and conditions of the
+                    <a href="#" class="span-item">Privacy Policy</a>
                 </label>
+               </div>
 
                 <button type="submit" class="clik-form">Send</button>
             </form>
@@ -454,7 +458,15 @@
     </div>
 
     <script src="./js/modal.js"></script>
+
+
 </body>
+
 </html>
 
 
+<!-- <label for=" " class="form-title">
+    <input type="checkbox" name="" class="checkbox" />
+    I accept the terms and conditions of the
+    <a href="" class="span-item">Privacy Policy</a>
+</label> -->
