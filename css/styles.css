@@ -839,6 +839,7 @@ img {
   margin-bottom: 8px;
   transition: border 250ms linear;
   margin: 0;
+  padding-left: 38px;
 }
 
 .input-modal:hover,
@@ -857,9 +858,27 @@ img {
   resize: none;
 }
 
+.form-icon-tittle{
+  position: relative;
+}
+
+.form-icon{
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: 250ms linear;
+}
+
+.form-icon:hover,
+.form-icon:focus{
+  fill: #4D5AE5;
+}
+
 textarea{
   padding: 8px;
 }
+
 .user_comment textarea::placeholder{
   font-family: 'Roboto', sans-serif;
   font-weight: 400;
@@ -867,7 +886,9 @@ textarea{
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+
 }
+
 
 .input-modal-comment:hover,
 .input-modal-comment:focus {
