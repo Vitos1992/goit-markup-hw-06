@@ -813,6 +813,7 @@ img {
   letter-spacing: 0.04em;
   color: #8E8F99;
   margin-bottom: 4px;
+ 
 
 }
 
@@ -837,6 +838,7 @@ img {
   border-radius: 4px;
   margin-bottom: 8px;
   transition: border 250ms linear;
+  margin: 0;
 }
 
 .input-modal:hover,
@@ -857,6 +859,14 @@ img {
 
 textarea{
   padding: 8px;
+}
+.user_comment textarea::placeholder{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.2;
+  letter-spacing: 0.04em;
+  color: rgba(46, 47, 66, 0.4);
 }
 
 .input-modal-comment:hover,
