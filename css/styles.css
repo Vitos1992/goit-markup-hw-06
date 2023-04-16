@@ -35,6 +35,19 @@ img {
   height: auto;
 }
 
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* ------------------------Header Web Studio------------------------ */
 
 .page-header {
@@ -858,7 +871,6 @@ img {
   transition: 250ms linear;
 }
 
-.form-icon:hover,
 .form-icon:focus {
   fill: #4D5AE5;
 }
@@ -889,6 +901,7 @@ textarea{
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
+  position: absolute;
 }
 
 
@@ -898,6 +911,8 @@ textarea{
 }
 
 .form-title {
+  display: flex;
+  align-items: center;
   font-family: 'Roboto',
       sans-serif;
   font-style: normal;
@@ -909,6 +924,27 @@ textarea{
   
 }
 
+.form-title span{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border: 1px solid rgba(46, 47, 66, 0.4);
+  border-radius: 2px;
+  margin-right: 8px;
+  fill: transparent;
+
+}
+
+.checkbox:checked + .form-title span{
+  background-color: #404BBF;
+  border: none;
+  fill: #F4F4FD;
+
+}
+
+
 .checkbox{
   margin-inline: 0;
   width: 16px;
@@ -917,9 +953,6 @@ textarea{
 }
 
 .check-item{
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
   margin-bottom: 24px;
 }
 
@@ -932,6 +965,7 @@ textarea{
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: #4D5AE5;
+  margin-left: 4px;
 
 }
 
