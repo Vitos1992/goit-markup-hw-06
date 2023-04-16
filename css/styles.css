@@ -837,15 +837,30 @@ img {
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
   margin-bottom: 8px;
-  transition: border 250ms linear;
+  outline: transparent;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   margin: 0;
   padding-left: 38px;
 }
 
 .input-modal:hover,
-.input-modal:focus {
-  border: 1px solid #4D5AE5;
+.input-modal:focus + .form-icon {
+  fill: 4D5AE5;
+  border-color:  #4D5AE5;
+}
 
+.form-icon {
+  position: absolute;
+  left: 16px;
+  top: 50%;
+  fill: #2E2F42;
+  transform: translateY(-50%);
+  transition: 250ms linear;
+}
+
+.form-icon:hover,
+.form-icon:focus {
+  fill: #4D5AE5;
 }
 
 .input-modal-comment {
@@ -856,23 +871,11 @@ img {
   margin-bottom: 16px;
   transition: border 250ms linear;
   resize: none;
+  outline: transparent;
 }
 
 .form-icon-tittle{
   position: relative;
-}
-
-.form-icon{
-  position: absolute;
-  left: 16px;
-  top: 50%;
-  transform: translateY(-50%);
-  transition: 250ms linear;
-}
-
-.form-icon:hover,
-.form-icon:focus{
-  fill: #4D5AE5;
 }
 
 textarea{
@@ -886,14 +889,12 @@ textarea{
   line-height: 1.2;
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
-
 }
 
 
 .input-modal-comment:hover,
 .input-modal-comment:focus {
-  border: 1px solid #4D5AE5;
-
+  border-color: #4D5AE5;
 }
 
 .form-title {
